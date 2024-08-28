@@ -1,0 +1,12 @@
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: auto;
+    width: 100vw;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 149, 128, 0.1);
+    position: fixed;
+}

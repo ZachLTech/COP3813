@@ -5,10 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zach Lopez - Home Page</title>
         <link rel="stylesheet" href="./assets/main.css">
-        <link rel="stylesheet" href="./assets/utils.css">
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./assets/elements.css">
     </head>
-    <body>
-        <h1 class="bungee-tint-regular">Mr Robot</h1>
+    <header class="w-full flex justify-between items-center py-2 px-16 z-50 bg-[#121212]">
+        <a href="#hero" class="text-3xl font-bold text-[#e44d3f]">PROJECT 1</a>
+        <div class="flex justify-center items-center gap-5">
+            <a href="#orb" class="text-[#e44d3f] no-underline font-normal text-xl">About</a>
+            <a href="#orb" class="text-[#FF7777] no-underline font-normal text-xl">Skills</a>
+            <a href="#orb" class="text-[#e44d3f] no-underline font-normal text-xl">Experience</a>
+            <a href="#orb" class="text-[#FF7777] no-underline font-normal text-xl">Education</a>
+            <a href="#orb" class="text-[#e44d3f] no-underline font-normal text-xl">Recognitions</a>
+        </div>
+    </header>
+    <body class="overflow-x-hidden">
+        <section id="hero" class="flex flex-col justify-center items-center bg-[#121212] overflow-hidden">
+            <h1 class="bungee-tint-regular text-[10vw] z-20">Zach Lopez</h1>
+            <p class="text-[1.3vw] text-[#e44d3f]">"Whatever you do, work at it with all your heart" - Colossians 3:23</p>
+            <img class="w-[32vw] absolute -right-12 -bottom-32 z-10" src="assets/me.png" alt="">
+            <div id="orb" class="z-20"></div>
+        </section>
+        <section class="bg-gradient-to-b from-[#121212] to-[#030303]"></section>
     </body>
 </html>
