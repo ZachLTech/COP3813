@@ -9,11 +9,14 @@
         <link rel="stylesheet" href="./assets/elements.css">
     </head>
     <header class="w-full flex justify-between items-center py-2 px-16 z-50 bg-[#121212]">
-        <a href="#hero" class="text-3xl font-bold text-[#e44d3f]">PROJECT 1 - Home Page</a>
+        <a href="#hero" class="text-3xl font-bold text-[#e44d3f] group">
+            <span class="group-hover:block hidden">HOME PAGE</span>
+            <span class="group-hover:hidden block">PROJECT 1</span> 
+        </a>
         <nav class="flex justify-center items-center gap-5">
-            <a href="#orb" class="text-[#e44d3f] no-underline font-normal text-xl">About</a>
-            <a href="#orb" class="text-[#FF7777] no-underline font-normal text-xl">Skills</a>
-            <a href="#orb" class="text-[#e44d3f] no-underline font-normal text-xl">Recognitions</a>
+            <a href="#about" class="text-[#e44d3f] no-underline font-normal text-xl">About</a>
+            <a href="#skills" class="text-[#FF7777] no-underline font-normal text-xl">Skills</a>
+            <a href="#recognitions" class="text-[#e44d3f] no-underline font-normal text-xl">Recognitions</a>
         </nav>
     </header>
     <body class="overflow-x-hidden bg-black">
@@ -40,9 +43,9 @@
                 <h1 class="bungee-tint-regular text-[4vw] text-left text-[#c90900] font-bold z-20">Introduction</h1>
                 <p class="text-[1vw] text-[#f0f8ff]"><span class="font-bold">I</span>'m Zach, a passionate computer science enthusiast currently dually enrolled studying CS @ FAU. <span class="font-bold">W</span>ith a love for innovation and technology, I've explored everything from 3D printing and virtual machines to web development and server management. <span class="font-bold">M</span>y journey has been filled with exciting projects and continuous learning, and I'm always eager to take on new challenges and expand my skills as I've found myself to be a quick learner who enjoys the process of creating new things.</p>
                 <div class="flex gap-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-12 h-12"><img src="./assets/images/icons/gmail.svg" alt=""></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-12 h-12"><img src="./assets/images/icons/github.svg" alt=""></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-12 h-12"><img src="./assets/images/icons/instagram.svg" alt=""></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/gmail.svg" alt=""></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/github.svg" alt=""></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/instagram.svg" alt=""></a>
                 </div>
             </div>
         </section>
@@ -206,7 +209,48 @@
                 </tr>
             </table>
         </section>
-        <section id="recognitions"></section>
+        <section id="recognitions" class="h-auto bg-[#0F0F0F] flex flex-col justify-center items-center gap-5 px-12 py-32">
+            <h1 class="bungee-tint-regular text-[4vw] font-bold">Recognitions</h1>
+            <div class="flex gap-5">
+                <div class="flex flex-col gap-3">
+                    <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
+                        <img class="w-full h-full group-hover:hidden" src="./assets/images/solarCarOutside.jpg" alt="">
+                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                            <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/solarCarDash.png" alt="">
+                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
+                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                        </div>
+                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
+                    </div>
+                    <p class="text-[1.5vw] text-[#f0f8ff] text-center">AEV Solar Cybersedan</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
+                        <img class="w-full h-full group-hover:hidden" src="./assets/images/schedulixCard.png" alt="">
+                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                            <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/schedulixHome.jpg" alt="">
+                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
+                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                        </div>
+                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
+                    </div>
+                    <p class="text-[1.5vw] text-[#f0f8ff] text-center">Schedulix</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
+                        <img class="w-full h-full group-hover:hidden" src="./assets/images/devfolifyTall.png" alt="">
+                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                            <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/devfolifyLong.png" alt="">
+                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
+                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                        </div>
+                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
+                    </div>
+                    <p class="text-[1.5vw] text-[#f0f8ff] text-center">Devfolify</p>
+                </div>
+            </div>
+            
+        </section>
         <div id="footer-space" class="w-screen h-[80vh]"></div>
         <footer id="footer" class="w-screen h-[80vh] fixed bottom-0 -z-10 text-white"></footer>
     </body>
