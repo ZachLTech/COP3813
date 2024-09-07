@@ -1,5 +1,7 @@
+<!-- THIS WEBSITE DOES NOT WORK ON MOBILE, IS NOT BUILT FOR MOBILE, AND HAS NO BUILT IN MOBILE COMPATIBILITY. -->
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Boilerplate - Site title + css links + favicon + other imports (tailwindcss was omitted) -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +9,9 @@
         <link rel="stylesheet" href="./assets/main.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./assets/elements.css">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
     </head>
+    <!-- Simple fixed header for single page navigation -->
     <header class="w-full flex justify-between items-center py-2 px-16 z-50 bg-[#121212]">
         <a href="#hero" class="text-3xl font-bold text-[#e44d3f] group">
             <span class="group-hover:block hidden">HOME PAGE</span>
@@ -19,14 +23,20 @@
             <a href="#recognitions" class="text-[#e44d3f] no-underline font-normal text-xl">Recognitions</a>
         </nav>
     </header>
+    <!-- Everything else in here -->
     <body class="overflow-x-hidden bg-black">
+        <!-- HERO SECTION -->
         <section id="hero" class="flex flex-col justify-center items-center bg-[#121212] overflow-hidden">
+            <!-- Name, quote/verse, and my image -->
             <h1 class="bungee-tint-regular text-[10vw] z-20">Zach Lopez</h1>
             <p class="text-[1.3vw] text-[#e44d3f] z-20">"Whatever you do, work at it with all your heart" - Colossians 3:23</p>
             <img class="w-[32vw] absolute -right-12 -bottom-32 z-10" src="assets/images/me-spook-funny.png" alt="">
+            <!-- The red glowing orb -->
             <div id="orb" class="z-20 rounded-t-[100%]"></div>
         </section>
+        <!-- INTRODUCTION SECTION -->
         <section id="about" class="bg-[#0F0F0F] flex justify-around items-center">
+            <!-- The cool photo collage with me and my friends - uses grid -->
             <div class="grid grid-cols-2 grid-rows-2 gap-3 w-[50vw] h-[70vh]">
                 <div class="row-span-2 overflow-hidden rounded-tl-2xl rounded-bl-2xl">
                     <img class="h-full brightness-90" src="./assets/images/me-waterfall.jpg" alt="Me With Waterfall">
@@ -39,17 +49,21 @@
                     <img class="w-full h-full" src="./assets/images/me+friends-car.jpg" alt="Me With Friends in Car Picture">
                 </div>
             </div>
+            <!-- Right side with intro title, text, and link icons -->
             <div class="w-[40vw] flex flex-col justify-center gap-5">
                 <h1 class="bungee-tint-regular text-[4vw] text-left text-[#c90900] font-bold z-20">Introduction</h1>
                 <p class="text-[1vw] text-[#f0f8ff]"><span class="font-bold">I</span>'m Zach, a passionate computer science enthusiast currently dually enrolled studying CS @ FAU. <span class="font-bold">W</span>ith a love for innovation and technology, I've explored everything from 3D printing and virtual machines to web development and server management. <span class="font-bold">M</span>y journey has been filled with exciting projects and continuous learning, and I'm always eager to take on new challenges and expand my skills as I've found myself to be a quick learner who enjoys the process of creating new things.</p>
                 <div class="flex gap-3">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/gmail.svg" alt=""></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/github.svg" alt=""></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/instagram.svg" alt=""></a>
+                    <a href="mailto:zlopezzl2021@gmail.com" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/gmail.svg" alt=""></a>
+                    <a href="https://github.com/ZachLTech" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/github.svg" alt=""></a>
+                    <a href="https://www.instagram.com/playpxco/" target="_blank" rel="noopener noreferrer" class="w-[2.5vw] h-[2.5vw]"><img src="./assets/images/icons/instagram.svg" alt=""></a>
                 </div>
             </div>
         </section>
+        <!-- SKILLS SECTION -->
         <section id="skills" class="h-auto bg-[#0F0F0F] flex justify-center items-center">
+            <!-- So the rubric said to use a table and I became inspired upon viewing the OG 1996 spacejam website https://www.spacejam.com/1996/ -->
+             <!-- I did a spacejam style mosaic of differently sized logos of the skills I know alongside HTML meters next to titles for naming and showing a scale of experience with each skill -->
             <table class="table-auto border-collapse w-[90vw]">
                 <tr class="h-32">
                     <td class="p-2"></td>
@@ -101,70 +115,71 @@
                         <img src="./assets/images/icons/html5.svg" alt="HTML" class="mx-auto w-[80px] brightness-50 hover:brightness-100 transition-all">
                     </td>
                     <td class="p-2"></td>
+                    <!-- This is the center with my skill titles and meters. Notice it also uses a list which is in the rubric -->
                     <td class="p-2 flex gap-5 justify-center items-center">
                         <ul>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Git</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Git</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Linux</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Linux</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="87"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Python</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Python</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="87"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">C</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">C</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Fusion360</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Fusion360</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="62"></meter>
                             </li>
                         </ul>
                         <ul>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Docker</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Docker</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Javascript</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Javascript</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="87"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Arduino</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Arduino</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">C++</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">C++</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Go</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Go</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
                             </li>
                         </ul>
                         <ul>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">HTML & CSS</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">HTML & CSS</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Typescript</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Typescript</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="87"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Raspberry-Pi</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Raspberry-Pi</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Vue/Nuxt</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Vue/Nuxt</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="62"></meter>
                             </li>
                             <li class="flex flex-col justify-center items-center">
-                                <p class="text-[#f0f8ff] text-lg text-center">Appwrite</p>
+                                <p class="text-[#f0f8ff] text-[1vw] text-center">Appwrite</p>
                                 <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
                             </li>
                         </ul>
@@ -209,16 +224,19 @@
                 </tr>
             </table>
         </section>
-        <section id="recognitions" class="h-auto bg-[#0F0F0F] flex flex-col justify-center items-center gap-5 px-12 py-32">
+        <!-- RECOGNITIONS SECTION -->
+        <!-- I was gonna make an experience and education section but I think we'll do that in the portfolio project probably so I did this instead -->
+        <section id="recognitions" class="h-auto bg-[#0F0F0F] flex flex-col justify-center items-center gap-5 px-12 py-32 rounded-b-[2vw]">
             <h1 class="bungee-tint-regular text-[4vw] font-bold">Recognitions</h1>
+            <!-- Each card is just an image that, when hovered, animates to a different size and changes the state of the detail elements display to be block instead of hidden -->
             <div class="flex gap-5">
                 <div class="flex flex-col gap-3">
                     <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
                         <img class="w-full h-full group-hover:hidden" src="./assets/images/solarCarOutside.jpg" alt="">
-                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                        <div class="flex flex-col h-full w-[45%] gap-5 justify-center items-center">
                             <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/solarCarDash.png" alt="">
                             <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
-                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                            <a href="https://github.com/YamanDevelopment/AEV-Software" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
                         </div>
                         <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
                     </div>
@@ -227,31 +245,83 @@
                 <div class="flex flex-col gap-3">
                     <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
                         <img class="w-full h-full group-hover:hidden" src="./assets/images/schedulixCard.png" alt="">
-                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                        <div class="flex flex-col h-full w-[45%] gap-5 justify-center items-center">
                             <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/schedulixHome.jpg" alt="">
-                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
-                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>1st Place Winner</strong> for the “Best Advanced Hack" at the 2023 NightHacks Hackathon</h1>
+                            <a href="https://devpost.com/software/schedulix" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Devpost</a>
                         </div>
-                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
+                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a group of 3 others decided we wanted to compete in our first hackathon upon finding NightHacks which was a 24-hour summer hackathon. It ended up just being me and 1 other that were able to work on this project though and we had a good time making a functional backend and frontend, although we didn't know how to connect the 2 at the time since we were inexperienced in using APIs.<br><br>As someone who was focussing on learning functional frontend at the time, I was able to design and implement the frontend for this project which you can now view a demo of at a <a class="underline text-blue-500 hover:text-blue-300" href="https://schedulixfedemo.zachl.tech" target="_blank">our demo site</a></p>
                     </div>
                     <p class="text-[1.5vw] text-[#f0f8ff] text-center">Schedulix</p>
                 </div>
                 <div class="flex flex-col gap-3">
                     <div class="w-[20vw] h-[55vh] hover:w-[50vw] hover:p-6 flex items-center gap-12 transition-all overflow-hidden bg-[#0A0A0A] rounded-2xl group">
                         <img class="w-full h-full group-hover:hidden" src="./assets/images/devfolifyTall.png" alt="">
-                        <div class="flex flex-col h-full w-[45%] gap-5 items-center">
+                        <div class="flex flex-col h-full w-[45%] gap-5 justify-center items-center">
                             <img class="hidden group-hover:block w-full h-[50%] rounded-xl" src="./assets/images/devfolifyLong.png" alt="">
-                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>Lockheed Martin Award</strong> for the “Highest level of engineering excellence”</h1>
-                            <a href="" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
+                            <h1 class="hidden group-hover:block text-[1.3vw] text-[#f0f8ff] text-center"><strong>3rd Place Winner</strong> at the 2024 Illuminate Hackathon</h1>
+                            <a href="https://github.com/YamanDevelopment/Devfolify" class="w-[45%] h-[10%] bg-[#c90900] rounded-xl text-[1.5vw] text-center text-[#f0f8ff] hover:scale-105 transition-all shadow-xl">Source</a>
                         </div>
-                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">Me and a team of 26 people built and raced a solar car at the Texas Motor Speedway after a year of hard work planning and executing the build process. After the race we were rewarded with the Lockheed Martin award mentioned as our car was very overengineered and we did very good overall in the race.<br><br>We also won the race in our division day 1 for most laps. This was an awesome experience and me alongside my coding team were able to create a fully functional Tesla style dashboard system for telemetry and car functionality.</p>
+                        <p class="hidden group-hover:block text-[1vw] max-w-[50%] text-[#f0f8ff]">This was another 24-hour hackathon that only I was really able to participate in, from the ideation to the development of the full-stack app in less than 24-hours. I ended up being able to create a full-stack ideation app for hackathons with a potential for being a project based leetcode replacement.<br><br>After weeks of judging and many complications on the Hackathon hosts side of things, we finally got our results back and scored third place overall in the hackathon. Feel free to check out the live demo of this app, but first see the Github README.</p>
                     </div>
                     <p class="text-[1.5vw] text-[#f0f8ff] text-center">Devfolify</p>
                 </div>
             </div>
-            
         </section>
-        <div id="footer-space" class="w-screen h-[80vh]"></div>
-        <footer id="footer" class="w-screen h-[80vh] fixed bottom-0 -z-10 text-white"></footer>
+        <!-- FOOTER SECTION SPACER -->
+         <!-- This just adds the extra 50vh of space at the bottom of the screen to give the emerging effect for the fixed footer -->
+        <div id="footer-space" class="w-screen h-[50vh] -z-20 absolute"></div>
+        <!-- I made the footer fixed behind everything to be revealed only at the bottom- it gives a really cool effect which I got inspiration from another website for this a while ago but don't remember the site. -->
+        <footer id="footer" class="w-screen h-[50vh] fixed bottom-0 -z-10 flex flex-col justify-between p-[2.5vw]">
+            <div class="flex w-full gap-[15vw] items-center">
+                <div class="flex flex-col gap-5 h-full">
+                    <!-- Logo and description -->
+                    <a class="w-[8vw]" href="https://zachl.tech" target="_blank" rel="noopener noreferrer">
+                        <img class="w-[8vw]" src="./assets/images/ZachLTechLogo.png" alt="">
+                    </a>
+                    <p class="text-[1vw] text-gray-200 max-w-[25vw]">This site isn't mobile compatible and I hope you enjoyed my project 1 for this class 😄. If you want, feel free to check out my github, contact me, or view my other sites.</p>
+                </div>
+                <div class="flex gap-[4vw]">
+                    <!-- Another series of lists with subsection titles and links to various places across my development landscape -->
+                    <ul>
+                        <li class="text-[1.7vw] text-white font-semibold mb-4">Socials</li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://github.com/ZachLTech" target="_blank">Github</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://www.instagram.com/playpxco/" target="_blank">Instagram</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://discord.com/users/829875896864866314" target="_blank">Discord</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://codepen.io/zachltech" target="_blank">Codepen</a></li>
+                    </ul>
+                    <ul>
+                        <li class="text-[1.7vw] text-white font-semibold mb-4">Websites</li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://zachl.tech" target="_blank">Socials</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://byeurl.cyou/comingsoon" target="_blank">Portfolio (real)</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://byeurl.cyou/comingsoon" target="_blank">Blog</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://webdev.zachl.tech" target="_blank">Learn Frontend Dev't</a></li>
+                    </ul>
+                    <ul>
+                        <li class="text-[1.7vw] text-white font-semibold mb-4">Explore</li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://jeebuscrossaint.github.io/" target="_blank">Amarnath P.</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://jcamille.tech" target="_blank">Jossaya C.</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://str1ke.codes" target="_blank">Thandi M.</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://makaip.com" target="_blank">Makai P.</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://www.alexcastronovo.com/" target="_blank">Alex C.</a></li>
+                    </ul>
+                    <ul>
+                        <li class="text-[1.7vw] text-white font-semibold mb-4">Contact</li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="mailto:zlopezzl2021@gmail.com" target="_blank">Personal Email</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="mailto:zlopez2021@fau.edu" target="_blank">School Email</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://resume.zachl.tech" target="_blank">Résumé Site</a></li>
+                        <li class="text-[1vw] text-gray-200 mb-2 cursor-pointer"><a href="https://resume-pdf.zachl.tech" target="_blank">Résumé PDF</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Line/spacer -->
+            <div class="w-full h-[1px] bg-gray-500"></div>
+            <!-- Gotta add the "made with ❤️" emoji at the end of every personal website lol -->
+            <div class="flex w-full justify-between">
+                <h1 class="text-[1vw] text-gray-500 self-center sm:self-start text-center sm:text-left">Made with ❤️ by <a class="underline bg-gradient-to-r from-green-400 to-green-700 inline-block text-transparent bg-clip-text" href="https://zachl.tech" target="_blank">ZachLTech</a></h1> 
+                <!-- Do it I dare you (if you type this into your terminal you will see a TUI based digital portfolio I made :D) -->
+                <h1 class="text-[1vw] text-gray-500 self-center sm:self-start text-center sm:text-left">ssh zachl.tech</h1>
+            </div>
+        </footer>
     </body>
 </html>
