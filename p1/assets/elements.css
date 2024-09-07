@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    padding: 0
+}
+  
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 section {
     width: 100vw;
     height: 100vh;
@@ -9,4 +20,8 @@ header {
     border-bottom: 1px solid;
     border-color: rgba(255, 149, 128, 0.1);
     position: fixed;
+}
+
+p, h1, ul, li {
+    margin: 0
 }
