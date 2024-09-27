@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Zach's Site</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar-expand-lg navybar">
+      <div class="container flex">
+        <a class="navbar-brand" href="#">Zach's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I'm Zach!</h1>
+        <p>A passionate developer creating impactful projects.</p>
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>
+              I'm Zach, a passionate computer science enthusiast currently
+              dually enrolled studying CS @ FAU. With a love for innovation and
+              technology, I've explored everything from 3D printing and virtual
+              machines to web development and server management. My journey has
+              been filled with exciting projects and continuous learning, and
+              I'm always eager to take on new challenges and expand my skills as
+              I've found myself to be a quick learner who enjoys the process of
+              creating new things.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./assets/images/mefunny.jpg"
+              alt="About Me"
+              style="width: 500px; height: 300px; border-radius: 20px"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              href="https://github.com/YamanDevelopment/AEV-Software"
+              target="_blank"
+              class="card project-card"
+            >
+              <img
+                src="./assets/images/solarCarDash.png"
+                class="card-img-top"
+                style="width: 350px; height: 200px"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Alset Solar Cybersedan</h5>
+                <p class="card-text text-white">
+                  Me and a team of 26 people built and raced a solar car at the
+                  Texas Motor Speedway after a year of hard work planning and
+                  executing the build process.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://devpost.com/software/schedulix"
+              target="_blank"
+              class="card project-card"
+            >
+              <img
+                src="./assets/images/schedulixHome.jpg"
+                class="card-img-top"
+                style="width: 350px; height: 200px"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Schedulix</h5>
+                <p class="card-text text-white">
+                  Why spend countless hours forming a college schedule when you
+                  can have Schedulix form multiple better schedules for you- and
+                  according to your preferences!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://github.com/YamanDevelopment/Devfolify"
+              target="_blank"
+              class="card project-card"
+            >
+              <img
+                src="./assets/images/devfolifyHome.png"
+                class="card-img-top"
+                style="width: 350px; height: 200px"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Devfolify</h5>
+                <p class="card-text text-white">
+                  Giving you real world problems and a chance to solve it using
+                  code in your unique way. We're here to help you develop unique
+                  projects and real-world problem-solving skills.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">My Skills</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Frontend & Design</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%">90%</div>
+            </div>
+
+            <h4>Backend and Server Management</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%">75%</div>
+            </div>
+
+            <h4>Automation and AI</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%">80%</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h4>Embedded Systems</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%">75%</div>
+            </div>
+
+            <h4>Version Control</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%">95%</div>
+            </div>
+
+            <h4>Touching Grass</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%">On weekends :)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-white text-center">
+      <p class="mb-0">
+        More info at <a href="https://zachl.tech">my socials site</a> 👍
+      </p>
+    </footer>
+  </body>
+</html>
