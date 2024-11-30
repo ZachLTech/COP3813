@@ -1,0 +1,10 @@
+a {
+    text-decoration: underline;
+    text-decoration-color: #1dac1d
+}
+
+span, li {
+    background: linear-gradient(to right, #006400, #06d606);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
